@@ -1,0 +1,11 @@
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  .contact .qr-code {
+    margin-top: 200px;
+    width: 150px;
+    height: 150px;
+  }
+  

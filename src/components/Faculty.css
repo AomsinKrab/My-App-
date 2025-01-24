@@ -1,0 +1,47 @@
+.faculty-member {
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faculty-member-image {
+  width: 200px;    /* ขนาดรูปภาพ */
+  height: 200px;   /* ขนาดรูปภาพ */
+  border-radius: 50%;  /* ทำให้รูปภาพเป็นวงกลม */
+  object-fit: cover;   /* ทำให้รูปภาพเต็มกรอบ */
+  margin-bottom: 10px;  /* ระยะห่างระหว่างรูปภาพกับชื่อและตำแหน่ง */
+
+  /* เพิ่มกรอบรอบๆ รูปภาพ */
+  border: 5px solid #4CAF50;  /* กำหนดกรอบสีเขียวเข้ม */
+  padding: 5px;  /* ระยะห่างระหว่างกรอบกับรูปภาพ */
+}
+
+.faculty h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faculty-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;  /* จัดให้รูปภาพและข้อมูลห่างกันอย่างเท่าเทียม */
+  gap: 20px;  /* ระยะห่างระหว่างแต่ละสมาชิก */
+}
+
+.faculty-member h3, .faculty-member p {
+  margin: 5px 0;  /* เพิ่มระยะห่างระหว่างชื่อและตำแหน่ง */
+}
+
+@media (max-width: 768px) {
+  .faculty-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faculty-member {
+    width: 100%;  /* ทำให้สมาชิกแต่ละคนเต็มพื้นที่ในหน้าจอเล็ก */
+  }
+}
