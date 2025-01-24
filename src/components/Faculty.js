@@ -31,7 +31,7 @@ const Faculty = () => {
           <div key={index} className="faculty-member">
             <img
               className="faculty-member-image"
-              src={`/images/${member.image}`}  // เส้นทางของรูปภาพ
+              src={`./images/${member.image}`}  // เส้นทางของรูปภาพ
               alt={member.name}
             />
             <h3>{member.name}</h3>
